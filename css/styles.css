@@ -1,0 +1,87 @@
+/* ======= ESTILO PROFESIONAL | Dashboard clean ======= */
+
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: #eef1f5;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  color: #2c2c2c;
+}
+
+/* ----- Contenedor principal ----- */
+.container {
+  background: #ffffff;
+  width: 95%;
+  max-width: 900px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ----- Títulos ----- */
+h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border-left: 4px solid #4c6ef5;
+  padding-left: 10px;
+}
+
+/* ----- Botones ----- */
+button {
+  background: #4c6ef5;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #3a57d4;
+}
+
+button:active {
+  background: #2c47b3;
+}
+
+/* ----- Contenedor de resultado ----- */
+#resultado {
+  background: #1e1e1e;
+  color: #dcdcdc;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 15px;
+  max-height: 450px;
+  overflow: auto;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.35);
+  white-space: pre-wrap; /* Se adapta mejor cuando hay JSON */
+  line-height: 1.5;
+}
+
+/* Scrollbar profesional */
+#resultado::-webkit-scrollbar {
+  width: 10px;
+}
+#resultado::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 8px;
+}
+#resultado::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pruebas Lote Back</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Trabajo recuperación – Ejecutor de peticiones a Back</h1>
+
+    <label for="nuevo_alumnograduacion_fotoacto">Foto (JPG):</label>
+    <input type="file" id="nuevo_alumnograduacion_fotoacto" accept="image/jpeg" />
+    <button onclick="ejecutarEstandar()">Probar modo STANDARD</button>
+    <button onclick="ejecutarEstricto()">Probar modo STRICT</button>
+
+
+    <h2>Resultado</h2>
+    <pre id="resultado"></pre>
+  </div>
+
+  <script src="js/metadatosEntidades.js"></script>
+  <script src="js/adaptadorAccesoBack.js"></script>
+  <script src="js/ejecutorLoteBack.js"></script>
+  <script src="js/principal.js"></script>
+</body>
+</html>
